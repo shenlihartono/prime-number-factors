@@ -57,4 +57,12 @@ public class PrimeNumberTests {
         List<Integer> actual = PrimeNumber.factorsOf(6);
         assertThat(actual, equalTo(expected));
     }
+
+    @Test
+    void testPrimeFactorsOf7() {
+        List<Integer> expected = new ArrayList<>();
+        expected.add(7);
+        List<Integer> actual = PrimeNumber.factorsOf(7);
+        assertThat(actual, equalTo(expected));
+    }
 }
