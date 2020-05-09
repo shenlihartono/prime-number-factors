@@ -1,6 +1,5 @@
 package com.pany.my;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -30,6 +29,15 @@ public class PrimeNumberTests {
         List<Integer> expected = new ArrayList<>();
         expected.add(3);
         List<Integer> actual = PrimeNumber.factorsOf(3);
+        assertThat(actual, equalTo(expected));
+    }
+
+    @Test
+    void testPrimeFactorsOf4() {
+        List<Integer> expected = new ArrayList<>();
+        expected.add(2);
+        expected.add(2);
+        List<Integer> actual = PrimeNumber.factorsOf(4);
         assertThat(actual, equalTo(expected));
     }
 }
