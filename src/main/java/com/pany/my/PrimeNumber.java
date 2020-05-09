@@ -9,6 +9,12 @@ public class PrimeNumber {
     }
 
     public static List<Integer> factorsOf(int n) {
-        return new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
+        if (n < 2) {
+            return result;
+        }
+        result.add(n);
+
+        return result;
     }
 }
