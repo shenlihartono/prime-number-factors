@@ -15,10 +15,10 @@ public class PrimeNumber {
                 result.add(2);
                 n /= 2;
             }
-
-            if (n > 1)
-                result.add(n);
         }
+
+        if (n > 1)
+            result.add(n);
 
         return result;
     }
