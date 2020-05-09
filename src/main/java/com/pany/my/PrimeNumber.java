@@ -1,5 +1,6 @@
 package com.pany.my;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeNumber {
@@ -8,6 +9,6 @@ public class PrimeNumber {
     }
 
     public static List<Integer> factorsOf(int n) {
-        return null;
+        return new ArrayList<>();
     }
 }
