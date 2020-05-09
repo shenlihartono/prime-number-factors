@@ -65,4 +65,14 @@ public class PrimeNumberTests {
         List<Integer> actual = PrimeNumber.factorsOf(7);
         assertThat(actual, equalTo(expected));
     }
+
+    @Test
+    void testPrimeFactorsOf8() {
+        List<Integer> expected = new ArrayList<>();
+        expected.add(2);
+        expected.add(2);
+        expected.add(2);
+        List<Integer> actual = PrimeNumber.factorsOf(8);
+        assertThat(actual, equalTo(expected));
+    }
 }
