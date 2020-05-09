@@ -15,4 +15,12 @@ public class PrimeNumberTests {
         List<Integer> actual = PrimeNumber.factorsOf(1);
         assertThat(actual, equalTo(expected));
     }
+
+    @Test
+    void testPrimeFactorsOf2() {
+        List<Integer> expected = new ArrayList<>();
+        expected.add(2);
+        List<Integer> actual = PrimeNumber.factorsOf(2);
+        assertThat(actual, equalTo(expected));
+    }
 }
